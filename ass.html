@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <title>퀴즈 프로그램 만들기</title>
+</head>
+<body>
+    <script>
+        let a1 = prompt("문제를 적으십시오");
+        console.log(a1);
+        let b1 = prompt("정답");
+        console.log(b1);
+    </script>
+    
+    <button onclick="myFucntion()">퀴즈 풀기</button>
+    <p id="check"></p>
+    <script type="text/javascript">
+        
+    function myFucntion() {
+    var kingName = prompt(a1, "");
+    if(kingName==b1) document.getElementById("check").innerHTML = "정답입니다.";
+    else document.getElementById("check").innerHTML = "오답입니다.";
+    }
+    </script>
+</body>
+</html>
